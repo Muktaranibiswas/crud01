@@ -12,7 +12,7 @@ $result = mysqli_query($link, $query);
 <ul>
     <li><a href="create.html">Create New</a> </li>
 </ul>
-<table border="1" width="70%">
+<table border="1" width="80%">
     <tr>
         <td>ID</td>
         <td>Full Name</td>
@@ -22,6 +22,7 @@ $result = mysqli_query($link, $query);
         <td>National ID</td>
         <td>Email</td>
         <td>Mobile</td>
+        <td>Track</td>
 
         <td>Action</td>
     </tr>
@@ -37,6 +38,7 @@ $result = mysqli_query($link, $query);
             <td><?php echo $row['nationalid']?></td>
             <td><?php echo $row['email']?></td>
             <td><?php echo $row['mobile']?></td>
+            <td><?php echo $row['track']?></td>
 
             <td>
                 <a href="view.php?id=<?php echo $row['id']?>">View</a> |

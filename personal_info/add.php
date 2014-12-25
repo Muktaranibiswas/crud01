@@ -10,12 +10,12 @@ $nationality = $_POST['nationality'];
 $nationalid = $_POST['nationalid'];
 $email = $_POST['email'];
 $mobile = $_POST['mobile'];
-
+$track = $_POST['track'];
 
 $link = mysqli_connect("localhost","root","lict@2","personal_info");
 
-$query = "INSERT INTO `personal_info`.`crud` (`fullname`, `fname`, `mname`, `nationality`, `nationalid`, `email`, `mobile`)
-VALUES ('$fullname', '$fname', '$mname', '$nationality', '$nationalid', '$email', '$mobile')";
+$query = "INSERT INTO `personal_info`.`crud` (`fullname`, `fname`, `mname`, `nationality`, `nationalid`, `email`, `mobile`, `track`)
+VALUES ('$fullname', '$fname', '$mname', '$nationality', '$nationalid', '$email', '$mobile', '$track')";
 //echo $query;
 mysqli_query($link, $query);
 ?>
