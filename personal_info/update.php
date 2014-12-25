@@ -1,13 +1,17 @@
 <?php
 
 $id = $_POST['id'];
-$firstName = $_POST['firstName'];
-$lastName = $_POST['lastName'];
+$fullname = $_POST['fullname'];
+$fname = $_POST['fname'];
+$mname = $_POST['mname'];
+
 $link = mysqli_connect("localhost",
     "root",
     "lict@2",
-    "students");
-$query = "UPDATE `students`.`users` SET `first_name` = '".$firstName."',
-`last_name` = '".$lastName ."' WHERE `users`.`id` = $id;";
+    "personal_info");
+
+$query = "UPDATE `personal_info`.`crud` SET `fullname` = '".$fullname."'
+WHERE `crud`.`id` = $id;";
+
 mysqli_query($link, $query);
 header('location:list.php');
