@@ -19,6 +19,7 @@ VALUES ('$fullname', '$fname', '$mname', '$nationality', '$nationalid', '$email'
 //echo $query;
 mysqli_query($link, $query);
 ?>
+
 <a href="create.html">Go Back</a>
 
 

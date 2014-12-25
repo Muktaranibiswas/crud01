@@ -18,6 +18,11 @@ $result = mysqli_query($link, $query);
         <td>Full Name</td>
         <td>Father's Name</td>
         <td>Mather's Name</td>
+        <td>Nationality</td>
+        <td>National ID</td>
+        <td>Email</td>
+        <td>Mobile</td>
+
         <td>Action</td>
     </tr>
     <?php
@@ -28,6 +33,11 @@ $result = mysqli_query($link, $query);
             <td><?php echo $row['fullname']?></td>
             <td><?php echo $row['fname']?></td>
             <td><?php echo $row['mname']?></td>
+            <td><?php echo $row['nationality']?></td>
+            <td><?php echo $row['nationalid']?></td>
+            <td><?php echo $row['email']?></td>
+            <td><?php echo $row['mobile']?></td>
+
             <td>
                 <a href="view.php?id=<?php echo $row['id']?>">View</a> |
                 <a href="edit.php?id=<?php echo $row['id']?>">Edit</a> |
