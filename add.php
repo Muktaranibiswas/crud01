@@ -1,7 +1,7 @@
 <?php
-//print_r($_REQUEST);
+//print_r($_POST);
 
-$code = $_POST['code'];
+$code=$_POST['code'];
 $track = $_POST['track'];
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
@@ -35,21 +35,17 @@ $hscyear = $_POST['bscyear'];
 
 $link = mysqli_connect("localhost","root","lict@2","students_info_form");
 
-// Check connection
-if (mysqli_connect_errno())
-{
-echo "Failed to connect to MySQL: " . mysqli_connect_error();
-}
+
 
 $query = "INSERT INTO `students_info_form`.`users` (`code`, `track`, `firstname`, `lastname`, `fathersname`, `mothersname`, `religion`, `dateofbirth`, `gender`, `nationality`, `nationalid`, `passport`, `presentaddress`, `permanentaddress`, `email`, `alternateemail`, `contactnumber`, `sscinstitute`, `sscroll`, `sscresult`, `sscyear`, `sscboard`, `hscinstitute`, `hscroll`, `hscresult`, `hscyear`, `hscboard`, `bachelordegree`, `bscnstitute`, `bscresult`, `bscyear`)
-VALUES ('$code', '$track' '$firstname', '$lastname', '$fathersname', '$mothersname', '$religion', '$dateofbirth ', '$gender ', '$nationality', '$nationaliD', '$passport', '$presentaddress', '$permanentaddress', '$email', '$alternateemail, '$contactnumber', '$sscinstitute', '$sscroll', '$sscresult', '$sscyear', '$sscboard', '$hscinstitute', '$hscroll', '$hscresult', '$hscyear', '$hscboard', '$bachelordegree', '$bscnstitute', '$bscresult', '$bscyear')";
+VALUES ('$code', '$track', '$firstname', '$lastname', '$fathersname', '$mothersname', '$religion', '$dateofbirth ', '$gender ', '$nationality', '$nationaliD', '$passport', '$presentaddress', '$permanentaddress', '$email', '$alternateemail, '$contactnumber', '$sscinstitute', '$sscroll', '$sscresult', '$sscyear', '$sscboard', '$hscinstitute', '$hscroll', '$hscresult', '$hscyear', '$hscboard', '$bachelordegree', '$bscnstitute', '$bscresult', '$bscyear')";
 
-//echo $query;
+echo $query;
 
 
 //mysqli_query($link, $query);
 
 //<a href="123.html">Go Back</a>
-mysqli_query($link, $query);
-header('location:list.php');
+//mysqli_query($link, $query);
+//header('location:list.php');
 ?>
