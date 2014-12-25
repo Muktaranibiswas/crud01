@@ -6,7 +6,7 @@ $link = mysqli_connect("localhost",
 "lict@2",
 "personal_info");
 
-$query = "DELETE FROM `students`.`users` WHERE `users`.`id` = $id";
+$query = "DELETE FROM `personal_info`.`crud` WHERE `crud`.`id` = $id";
 mysqli_query($link, $query);
 
 header('location:list.php');

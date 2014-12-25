@@ -10,8 +10,6 @@ $result = mysqli_query($link, $query);
 
 ?>
 <ul>
-    <li><a href="view.php">view</a> </li>
-    <li><a href="list.php">list</a> </li>
     <li><a href="create.html">Create New</a> </li>
 </ul>
 <table border="1" width="70%">
@@ -33,8 +31,8 @@ $result = mysqli_query($link, $query);
             <td>
                 <a href="view.php?id=<?php echo $row['id']?>">View</a> |
                 <a href="edit.php?id=<?php echo $row['id']?>">Edit</a> |
-                <a href="delete.php?id=<?php echo $row['id']?>">Delete</a> |
-                <a href="update.php?id=<?php echo $row['id']?>">update</a>
+                <a href="delete.php?id=<?php echo $row['id']?>">Delete</a>
+
             </td>
         </tr>
     <?php
