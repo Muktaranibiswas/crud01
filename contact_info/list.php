@@ -3,7 +3,7 @@
 $link = mysqli_connect("localhost",
     "root",
     "lict@2",
-    "personal_info");
+    "contact_info");
 
 $query = "select * from crud;";
 $result = mysqli_query($link, $query);
@@ -15,14 +15,14 @@ $result = mysqli_query($link, $query);
 <table border="1" width="100%">
     <tr>
         <td>ID</td>
-        <td>Full Name</td>
-        <td>Father's Name</td>
-        <td>Mather's Name</td>
-        <td>Nationality</td>
-        <td>National ID</td>
-        <td>Email</td>
+        <td>Present Address</td>
+        <td>Permanent Address</td>
+        <td>District</td>
+        <td>Home Phone</td>
         <td>Mobile</td>
-        <td>Track</td>
+        <td>Emergency Contact</td>
+        <td>Email</td>
+        <td>Alternate Emai</td>
 
         <td>Action</td>
     </tr>
@@ -31,14 +31,14 @@ $result = mysqli_query($link, $query);
         ?>
         <tr>
             <td><?php echo $row['id']?></td>
-            <td><?php echo $row['fullname']?></td>
-            <td><?php echo $row['fname']?></td>
-            <td><?php echo $row['mname']?></td>
-            <td><?php echo $row['nationality']?></td>
-            <td><?php echo $row['nationalid']?></td>
-            <td><?php echo $row['email']?></td>
+            <td><?php echo $row['padd']?></td>
+            <td><?php echo $row['peradd']?></td>
+            <td><?php echo $row['district']?></td>
+            <td><?php echo $row['hphone']?></td>
             <td><?php echo $row['mobile']?></td>
-            <td><?php echo $row['track']?></td>
+            <td><?php echo $row['econtact']?></td>
+            <td><?php echo $row['email']?></td>
+            <td><?php echo $row['aemail']?></td>
 
             <td>
                 <a href="view.php?id=<?php echo $row['id']?>">View</a> |

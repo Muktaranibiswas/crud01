@@ -12,7 +12,7 @@ $row = mysqli_fetch_assoc($result);
 //print_r($row);
 ?>
 
-<table border="1" width="80%">
+<table border="1" width="100%">
     <tr>
         <td>ID</td>
         <td>Full Name</td>
