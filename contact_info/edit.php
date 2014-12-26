@@ -15,10 +15,10 @@ $row = mysqli_fetch_assoc($result);
     <input type="hidden" name="id" value="<?php echo $row['id'];?>" />
 
     <label>Present Address:</label>
-    <textarea name="padd"><?php echo $row['padd'];?>"</textarea>
+    <textarea name="padd"><?php echo $row['padd'];?></textarea>
 
     <label>Permanent Address:</label>
-    <textarea name="peradd"><?php echo $row['peradd'];?>"</textarea>
+    <textarea name="peradd"><?php echo $row['peradd'];?></textarea>
 
     <label>District:</label>
 

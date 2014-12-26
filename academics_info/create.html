@@ -1,0 +1,61 @@
+<html>
+<body>
+
+<form action="add.php"method = 'POST'>
+    <h3><B>Academic Information:</B></h3>
+
+    <br>
+
+    <label> Level of Education </label>
+    <select name="loeducation">
+        <option selected>select Education level</option>
+        <option value="Diploma">Diploma</option>
+        <option value="Bachelar">Bachelar</option>
+        <option value="Masters">Masters</option>
+        <option value="Doctoral">Doctoral</option>
+
+    </select>
+    <br>
+
+
+    <label>Exam Title* </label>
+    <input type ="text" name = "etitle">
+    <br>
+    <label>Group* </label>
+    <input type ="text" name = "group">
+    <br>
+    <label> Institution* </label>
+    <input type ="text" name = "institution">
+    <br>
+    <label> Result Type* </label>
+    <select name="rtype">
+        <option value="Grade">Grade</option>
+        <option value="Other">Other</option>
+        </select>
+    <br>
+
+    <label> Result* </label>
+    <input type ="text" name = "result">
+
+        <label>Scale * </label>
+        <input type ="text" name = "scale">
+    <br>
+        <label>Passing Year* </label>
+        <input type ="text" name = "pyear">
+        <br>
+
+        <label>Duration* </label>
+        <input type ="text" name = "duration">
+        <br>
+        <label> Achievement* </label>
+        <input type ="text" name = "achievement">
+        <br>
+
+    <br>
+    <button type = "submit" name = "submit">Save</button>
+
+</form>
+</body>
+</html>
+
+<a href="list.php">Go to List</a>
