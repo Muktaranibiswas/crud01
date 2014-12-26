@@ -2,12 +2,13 @@
 <body>
 
 <form action="add.php"method = 'POST'>
+    <h3><B>Contact Information:</B></h3>
 
     <label>Present Address:</label>
-    <input type ="text" name = "padd">
+    <textarea name="padd" cols="20" rows="2" ></textarea>
     <br>
     <label>Permanent Address:</label>
-    <input type ="text" name = "peradd">
+    <textarea name="peradd" cols="20" rows="2" ></textarea>
     <br>
     <label>District</label>
     <select name="district">
@@ -38,6 +39,11 @@
     <input type ="email" name = "aemail">
     <br>
 
+    <br>
+    <label>Gender</label>
+    <input type="radio" name="gender" value="Male" />Male
+    <input type="radio" name="gender" value="Female" />Female
+    <br>
     <button type = "submit" name = "submit">Save</button>
 
 </form>

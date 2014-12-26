@@ -15,10 +15,10 @@ $row = mysqli_fetch_assoc($result);
     <input type="hidden" name="id" value="<?php echo $row['id'];?>" />
 
     <label>Present Address:</label>
-    <input type="text" name="padd" value="<?php echo $row['padd'];?>" />
+    <textarea name="padd"><?php echo $row['padd'];?>"</textarea>
 
     <label>Permanent Address:</label>
-    <input type="text" name="peradd" value="<?php echo $row['peradd'];?>" />
+    <textarea name="peradd"><?php echo $row['peradd'];?>"</textarea>
 
     <label>District:</label>
 
@@ -51,8 +51,13 @@ $row = mysqli_fetch_assoc($result);
 
     <label>Alternate Email:</label>
     <input type="text" name="aemail" value="<?php echo $row['aemail'];?>" />
+    <br>
 
+    <label>Gender:</label>
 
+    <input type="radio" name="gender"<?php if ($row['gender']== "Male") echo 'checked';?> value= "Male" />Male
+    <input type="radio" name="gender"<?php if ($row['gender']== "Female") echo 'checked';?> value= "Female" />Female
 
     <button type="submit">Save</button>
 </form>
+</html>
