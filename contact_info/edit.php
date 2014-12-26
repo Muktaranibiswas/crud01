@@ -21,7 +21,19 @@ $row = mysqli_fetch_assoc($result);
     <input type="text" name="peradd" value="<?php echo $row['peradd'];?>" />
 
     <label>District:</label>
-    <input type="text" name="district" value="<?php echo $row['district'];?>" />
+
+
+    <select name = "district">
+        <option <?php if ($row ['district']== "dhaka") echo 'selected'; ?> value="dhaka">Dhaka</option>
+        <option <?php if ($row ['district']== "barisal") echo 'selected'; ?> value="barisal">Barisal</option>
+        <option <?php if ($row ['district']== "sylhet") echo 'selected'; ?> value="sylhet">Sylhet</option>
+        <option <?php if ($row ['district']== "rajshashi") echo 'selected'; ?> value="rajshashi">Rajshashi</option>
+        <option <?php if ($row ['district']== "khulna") echo 'selected'; ?> value="khulna">Khulna</option>
+        <option <?php if ($row ['district']== "chittagong") echo 'selected'; ?> value="chittagong">Chittagong</option>
+        <option <?php if ($row ['district']== "comilla") echo 'selected'; ?> value="comilla">Comilla</option>
+    </select>
+
+
 
     <label>Home Phone:</label>
     <input type="text" name="hphone" value="<?php echo $row['hphone'];?>" />
