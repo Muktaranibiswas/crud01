@@ -1,5 +1,5 @@
 <?php
-print_r($_POST):
+//print_r($_POST):
 
 $id = $_GET['id'];
 $loeducation = $_POST['loeducation'];
@@ -38,6 +38,6 @@ WHERE `crud`.`id` = $id;";
 mysqli_query($link, $query);
 
 
-//header('location:list.php');
+header('location:list.php');
 
 ?>

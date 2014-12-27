@@ -3,6 +3,7 @@
 <body>
 
 <form action="add.php"method = 'POST'>
+    <h3><B>personal Information:</B></h3>
 
     <label>Full Name:</label>
     <input type ="text" name = "fullname">
@@ -20,18 +21,22 @@
     <input type ="text" name = "nationalid">
     <br>
     <label>Email:</label>
-    <input type ="text" name = "email">
+    <input type ="email" name = "email">
     <br>
     <label>Mobile:</label>
     <input type ="text" name = "mobile">
     <br>
 
     <label>Track:</label>
-    <input type ="text" name = "track">
-
-
+    <select name="track">
+        <option value="ITS" selected>ITS</option>
+        <option value="ITES">ITES</option>
+        <option value="ITSS">ITS</option>
+        <br>
+        </select>
+    <br>
     <button type = "submit" name = "submit">Save</button>
-
+    <button type = "reset" name = "reset">Cancel</button>
 </form>
 </body>
 </html>
