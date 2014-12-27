@@ -38,17 +38,17 @@ $row = mysqli_fetch_assoc($result);
     <label>Home Phone:</label>
     <input type="text" name="hphone" value="<?php echo $row['hphone'];?>" />
 
-
+    <br>
     <label>Mobile:</label>
     <input type="text" name="mobile" value="<?php echo $row['mobile'];?>" />
-
+    <br>
     <label>Emergency Contact</label>
     <input type="text" name="econtact" value="<?php echo $row['econtact'];?>" />
-
+    <br>
 
     <label>Email:</label>
     <input type="text" name="email" value="<?php echo $row['email'];?>" />
-
+    <br>
     <label>Alternate Email:</label>
     <input type="text" name="aemail" value="<?php echo $row['aemail'];?>" />
     <br>
@@ -57,7 +57,7 @@ $row = mysqli_fetch_assoc($result);
 
     <input type="radio" name="gender"<?php if ($row['gender']== "Male") echo 'checked';?> value= "Male" />Male
     <input type="radio" name="gender"<?php if ($row['gender']== "Female") echo 'checked';?> value= "Female" />Female
-
+    <br>
     <button type="submit">Save</button>
 </form>
 </html>
