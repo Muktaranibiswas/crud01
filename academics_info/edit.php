@@ -27,18 +27,18 @@ $row = mysqli_fetch_assoc($result);
 
     <label>Exam Title:</label>
     <input type="text" name="etitle" value="<?php echo $row['etitle'];?>" />
-
+    <br>
 
     <label>Group:</label>
     <input type="text" name="group" value="<?php echo $row['group'];?>" />
-
+    <br>
     <label>Institution</label>
     <input type="text" name="institution" value="<?php echo $row['institution'];?>" />
-
+    <br>
 
     <label>Result Type:</label>
     <input type="text" name="rtype" value="<?php echo $row['rtype'];?>" />
-
+    <br>
     <label>Result:</label>
     <input type="text" name="result" value="<?php echo $row['result'];?>" />
     <br>
